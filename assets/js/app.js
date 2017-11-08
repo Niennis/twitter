@@ -26,9 +26,11 @@ window.onload = function() {
             var nameSpan = document.createElement("span");
             var dateSpan = document.createElement("span");
             var tuitP = document.createElement("p");
+            var hr = document.createElement('hr')
             tuitDiv.appendChild(nameSpan);
             tuitDiv.appendChild(dateSpan);
             tuitDiv.appendChild(tuitP);
+            tuitDiv.appendChild(hr);
             tuitDiv.className = "tuit"
             nameSpan.textContent = "Nienna";
             dateSpan.textContent = moment().format("MMM Do YY, H:mm:ss");
@@ -101,14 +103,6 @@ window.onload = function() {
     }
 
 /* FUNCIÓN PARA AJUSTAR TEXTO EN TEXTAREA */
-
-    thinkInput.setAttribute('style', 'height:' + (thinkInput.scrollHeight) + 'px;overflow-y:hidden;');
-    thinkInput.addEventListener("input", OnInput, false);
-
-    function OnInput() {
-        this.style.height = 'auto';
-        this.style.height = (this.scrollHeight) + 'px';
-    }
 
     var textarea = document.getElementById("message");
     var heightLimit = 200; /* Maximum height: 200px */

@@ -3,6 +3,11 @@ body{
     margin:0px;
     background-image: url('../../assets/img/forest.jpg');
     background-attachment: fixed;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.favicon{
+    width:16px;
 }
 /* INICIO HEADER */
 nav{
@@ -10,8 +15,11 @@ nav{
     position: fixed;
     width:100%;
     margin:0px;
+    height: 46px;
     border-bottom:1px solid grey;
     z-index: 2;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 li{
@@ -38,19 +46,18 @@ li a{
     width:290px;
     border:1px solid transparent;
     float:left;
-    margin-top:50px;
+    margin:54px 20px 20px 48px;
+
 }
 
 #profile{
-    height: 200px;
-    margin:10px 10px 0 10px;
-    border:1px solid white;
-    background-color: white;
+    width:290px;
+    border:1px solid transparent;
 }
 
 #trending{
     height:500px;
-    margin:10px 10px 0 10px;
+    margin:10px 0px 0px 0px;
     border:1px solid white;
     background-color: white;
 }
@@ -62,15 +69,14 @@ li a{
 #centralbar{
     float:left;   
     text-align: center;
-    border:1px solid white;
-    background-color: white;
+    border:1px solid transparent;
     margin-top:61px;
     width:590px;   
 }
 
 #bartuit{
-    border:1px solid white;
-    background-color: white;
+    border:1px solid transparent;
+    background-color: #cbeee5;
 }
 
 #message {
@@ -96,9 +102,11 @@ li a{
     position: relative;
     left:200px;
     z-index: 1;
+    background-color: #cbeee5;
 }
 
 button{
+    width:100px;
     display:block;
     float:right;
     clear:both;
@@ -106,27 +114,36 @@ button{
     padding:10px;
     background-color: teal;
     border:none;
-    border-radius: 5px;
+    border-radius: 20px;
     color:white;
 }
 
 .tuit{
-    background-color: rgb(141, 206, 170);
-    margin: 5px 20px;
-    width:530px;
-    border-radius:10px;
-    padding: 10px; 
+    background-color: rgb(255, 255, 255);
+    margin: 0px 0px 0px 0px;
+    width:568px;
+    border:1px solid transparent;
+    padding: 10px;
     color:#000000;   
     text-align: left; 
 }
 
+hr{
+    color:#E1E8EC;
+    width:587px;
+    border-top: 1px solid #E1E8EC;
+    margin-left:-10px;
+
+}
+
 #name{
     color:teal; 
+    font-weight: bold;
     float:left;
 }
 
 #date{
-    color: white;
+    color: gray;
     float:left; 
     padding-left: 5px;
 }
@@ -142,3 +159,9 @@ button{
 }
 
 /* FIN BARRA CENTRAL */
+
+
+
+.timeline-InformationCircle-widgetParent{
+    display: none;
+}
