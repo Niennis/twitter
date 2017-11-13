@@ -52,7 +52,7 @@ li a{
 
 #profile{
     width:290px;
-    border:1px solid transparent;
+    border:none;
 }
 
 #trending{
@@ -60,6 +60,25 @@ li a{
     margin:10px 0px 0px 0px;
     border:1px solid white;
     background-color: white;
+    padding: 0px 0px 0px 10px;
+}
+
+#trending h3{
+    line-height: 18px;
+    display: inline-block;
+}
+
+#trending a{
+    color:teal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+#trending p{
+    color: gray;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0px 0px 10px 0px;
 }
 
 /* FIN BARRA IZQUIERDA*/
