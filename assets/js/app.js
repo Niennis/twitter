@@ -8,18 +8,13 @@ window.onload = function() {
     var boxMessage = document.getElementById('bartuit');
     var showChar = document.getElementById('showChar');
 
- /*   sendButton.disabled = true;*/
-/*    thinkInput.onkeydown = function(){
-        var charSpan = document.createElement('span');
-        charSpan = String.length <= 140;
-    }
-*/
-
 /* FUNCION PARA CREAR Y "POSTEAR" UN TUIT */
 
     sendButton.onclick = function() {
         if (thinkInput.value == "") {
             sendButton.disabled = false;
+            sendButton.style.backgroundColor = 'turquoise';
+            
             
         } else{
             var tuitDiv = document.createElement("div");
@@ -42,32 +37,9 @@ window.onload = function() {
             sendButton.disabled = false;
             
             timeLine.insertBefore(tuitDiv, timeLine.children[0]);
-            /*thinkInput.value = '';*/
-            
+            thinkInput.value = '';           
         } 
     }
-
-/* FUNCIÓN PARA ACTIVAR-DESACTIVAR BOTON ENVIAR */
-  /*  var activ = function(){
-        if(thinkInput.value != ""){
-            sendButton.disabled = false;
-    }
-
-    var inactiv = function(){
-        if(thinkInput.value == ""){
-            sendButton.disabled = true;            
-        }
-    }
-
-    thinkInput.onkeypress = function(){
-        if(thinkInput.value != ""){
-            sendButton.disabled = false;
-        }
-        if(thinkInput.value == ""){
-            sendButton.disabled = true;            
-        }
-    }*/
-
 
 /* FUNCIÓN PARA MOSTRAR CARACTERES Y DESABILITAR BOTON*/
 
@@ -111,5 +83,4 @@ window.onload = function() {
      textarea.style.height = ""; /* Reset the height*/
      textarea.style.height = Math.min(textarea.scrollHeight, heightLimit) + "px";
     }
-    
 }
